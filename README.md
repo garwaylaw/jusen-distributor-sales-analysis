@@ -15,7 +15,9 @@
 
 ## 使用方式
 
-把 Skill 安装到 Codex 后，在同一个对话中提供销售明细文件，并说明希望生成炬森销售统计。例如：
+将整个 `jusen-distributor-sales-analysis` 文件夹，按所用 Agent 支持的 Skill、插件或指令包方式加载。请确保 `SKILL.md` 与 `references/` 文件夹一起提供；本 Skill 会读取其中的产品分类表和人工修正规则。如果 Agent 不支持 Skill 文件夹，可在对话中提供 `SKILL.md`，并同时附上 `references/jusen-product-categories.md` 和 `references/manual-overrides.md`。
+
+加载后，在同一个对话中提供销售明细文件，并说明希望生成炬森销售统计。例如：
 
 ```text
 请使用 jusen-distributor-sales-analysis 分析这个 Excel 销售明细，
